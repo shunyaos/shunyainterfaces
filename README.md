@@ -55,16 +55,16 @@ cute & cool IoT devices for people regardless of their specialization.
 ---  
 
 ## Documentation 
-Check out our [User Documentation](/user-docs/user-docs-main-page) for comprehensive documentation on Shunya Interfaces. 
+Check out our [User Documentation](/user-docs/user-docs-main-page.md) for comprehensive documentation on Shunya Interfaces. 
 
 ## Examples
 See [Code examples](/examples).
 
 ## Installation
-Install and start making IOT projects, See [How to Install Shunya Interfaces](/user-docs/how-to-install-shunya-interfaces) document. 
+Install and start making IOT projects, See [How to Install Shunya Interfaces](/user-docs/how-to-install-shunya-interfaces.md) document. 
 
 ## API Reference
-Check out our [API Reference](/user-docs/shunya-interfaces-API) document. 
+Check out our [API Reference](/user-docs/shunya-interfaces-API.md) document. 
 
 ## Credits
 This GPIO access library is inspired from WiringPi. Please checkout the original library [WiringPi][WiringPi].
