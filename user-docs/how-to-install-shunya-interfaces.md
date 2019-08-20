@@ -4,9 +4,11 @@
 You need Shunya OS installed on your favorite Development device. 
 
 For instructions on "How to install Shunya OS on my favorite device"
-1. Goto [Install Shunya OS on my favorite device](http://docs.shunyaos.org/)
-2. Select your favorite device.
-3. Follow Steps given in the `Flashing Shunya OS` section.    
+1. Goto [Shunya OS Release Page](http://shunyaos.org/beta-release/)
+2. Choose your Device
+3. Download Shunya OS from the download Link.
+4. Steps for Installing Shunya OS will be given in the Documentation Link on the release page.
+
 
 ## Install Shunya-Interfaces using Package Manager
  
