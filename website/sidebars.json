@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Getting Started": ["installation", "blink", "digitalread", "simple-mode", "adv-mode"],
+    "Examples": ["water-meter","energy", "data-logger"],
+    "Guides": ["error-handling"],
+    "API": ["api-simp-sensors", "api-simp-displays", "api-simp-inp-dev"]
+  },
+  "docs-other": {
+    "API": ["api-advance","api-adv-sensors"]
+  }
+}

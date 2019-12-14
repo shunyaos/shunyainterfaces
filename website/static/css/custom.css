@@ -1,0 +1,91 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+ 
+/* your custom css */
+
+.index-hero {
+  background-color: #2b3137;
+  padding: 48px;
+}
+
+.index-hero-inner {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.index-hero-project-tagline {
+  color: #2b3137;
+  font-size: 64px;
+  margin: 0;
+}
+
+.index-hero-project-keywords {
+  color: $primaryColor;
+}
+
+.index-hero-logo {
+  float: right;
+  margin-top: 20px;
+  padding: 20px;
+  padding-right: 0;
+}
+
+.index-ctas {
+  margin-top: 24px;
+}
+
+.index-ctas-get-started-button {
+  border-radius: 8px;
+  border-width: 2px;
+  color: #272727;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 24px;
+  padding: 18px 36px;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .index-hero {
+    padding: 20px;
+  }
+
+  .index-hero-inner {
+    padding: 0;
+  }
+
+  .index-hero-project-tagline {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .index-hero-logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .index-ctas {
+    text-align: center;
+  }
+
+  .index-ctas-github-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
