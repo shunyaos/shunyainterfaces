@@ -66,7 +66,7 @@ class HomeSplash extends React.Component {
 				 	  <div className="index-ctas">
 							<a
 								className="button index-ctas-get-started-button"
-								href={docUrl('installation.html')}>
+								href={docUrl('quick-start/01-intro')}>
 								Get Started
 							</a>
 						</div>

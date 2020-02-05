@@ -1,11 +1,29 @@
 {
   "docs": {
-    "Getting Started": ["installation", "blink", "digitalread", "simple-mode", "adv-mode"],
-    "Examples": ["water-meter","energy", "data-logger"],
-    "Guides": ["error-handling"],
-    "API": ["api-simp-sensors", "api-simp-displays", "api-simp-inp-dev"]
+    "Quick-Start": [ 
+      "quick-start/01-intro", 
+	    "quick-start/02-overview", 
+      "quick-start/03-define",
+	    "quick-start/04-design",
+      "quick-start/05-burn-os",
+      "quick-start/06-connect" 
+    ],
+    "Getting Started": [
+      "guides/installation", 
+      "guides/blink", 
+      "guides/digitalread", 
+      "guides/simple-mode", 
+      "guides/adv-mode"
+    ],
+    "Examples": [
+      "old-docs/water-meter",
+      "old-docs/energy", 
+      "old-docs/data-logger"
+    ],
+    "Guides": ["guides/error-handling"]
   },
   "docs-other": {
-    "API": ["api-advance","api-adv-sensors"]
+    "API": [
+    ]
   }
 }

@@ -16,7 +16,7 @@ const users = [
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
     infoLink: 'https://shunyaos.org',
-    pinned: true,
+    pinned: false,
   },
 ];
 
@@ -38,8 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'installation', label: 'Docs'},
-    {doc: 'api-advance', label: 'Advance Mode'},
+    {doc: 'guides/installation', label: 'Docs'},
     {page: 'help', label: 'Help'},
   ],
 
