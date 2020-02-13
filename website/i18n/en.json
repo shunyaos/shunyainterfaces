@@ -5,133 +5,286 @@
     "previous": "Previous",
     "tagline": "Simple & Low code Interfaces library",
     "docs": {
-      "api-adv-ACS712": {
-        "title": "api-adv-ACS712"
-      },
-      "api-adv-BH1750": {
-        "title": "api-adv-BH1750"
-      },
-      "api-adv-bme280": {
-        "title": "api-adv-bme280",
-        "sidebar_label": "BME280 Advance API"
-      },
-      "api-adv-HCSR04": {
-        "title": "api-adv-HCSR04"
-      },
-      "api-adv-PCF8591": {
-        "title": "api-adv-PCF8591"
-      },
-      "api-adv-sensors": {
-        "title": "Sensors",
-        "sidebar_label": "Sensors"
-      },
-      "api-adv-YFS201": {
-        "title": "api-adv-YFS201"
-      },
-      "api-advance": {
-        "title": "Shunya Interfaces API",
-        "sidebar_label": "API-Advanced"
-      },
-      "api-simp-ACS712": {
-        "title": "api-simp-ACS712"
-      },
-      "api-simp-BH1750": {
-        "title": "api-simp-BH1750"
-      },
-      "api-simp-bme280": {
-        "title": "api-simp-bme280"
-      },
-      "api-simp-bmp280": {
-        "title": "api-simp-bmp280"
-      },
-      "api-simp-displays": {
-        "title": "Displays",
-        "sidebar_label": "Displays"
-      },
-      "api-simp-HCSR04": {
-        "title": "api-simp-HCSR04"
-      },
-      "api-simp-inp-dev": {
-        "title": "Input Devices",
-        "sidebar_label": "Input Devices"
-      },
-      "api-simp-PCF8591": {
-        "title": "api-simp-PCF8591"
-      },
-      "api-simp-sensors": {
-        "title": "Sensors",
-        "sidebar_label": "Sensors"
-      },
-      "api-simple": {
-        "title": "Shunya Interfaces API",
-        "sidebar_label": "API"
-      },
-      "core-api/api-core-gpio": {
-        "title": "core-api/api-core-gpio"
-      },
-      "core-api/api-core-i2c": {
-        "title": "core-api/api-core-i2c"
-      },
-      "core-api/api-core-pwm": {
-        "title": "core-api/api-core-pwm"
-      },
-      "core-api/api-core-spi": {
-        "title": "core-api/api-core-spi"
-      },
-      "core-api/api-core-uart": {
-        "title": "core-api/api-core-uart"
-      },
-      "data-logger": {
+      "cookbook/data-logger": {
         "title": "Connected Sensors for Farms",
         "sidebar_label": "Connected Sensors for Farms"
       },
-      "energy": {
+      "cookbook/energy": {
         "title": "Smart Energy Meter",
         "sidebar_label": "Smart Energy Meter"
       },
-      "water-meter": {
+      "cookbook/water-meter": {
         "title": "IoT Water Meter",
         "sidebar_label": "IoT Water Meter"
       },
-      "adv-mode": {
+      "deprecated/api-adv-ACS712": {
+        "title": "deprecated/api-adv-ACS712"
+      },
+      "deprecated/api-adv-BH1750": {
+        "title": "deprecated/api-adv-BH1750"
+      },
+      "deprecated/api-adv-bme280": {
+        "title": "deprecated/api-adv-bme280",
+        "sidebar_label": "BME280 Advance API"
+      },
+      "deprecated/api-adv-HCSR04": {
+        "title": "deprecated/api-adv-HCSR04"
+      },
+      "deprecated/api-adv-PCF8591": {
+        "title": "deprecated/api-adv-PCF8591"
+      },
+      "deprecated/api-adv-sensors": {
+        "title": "Sensors",
+        "sidebar_label": "Sensors"
+      },
+      "deprecated/api-adv-YFS201": {
+        "title": "deprecated/api-adv-YFS201"
+      },
+      "deprecated/api-advance": {
+        "title": "Shunya Interfaces API",
+        "sidebar_label": "API-Advanced"
+      },
+      "deprecated/api-core-gpio": {
+        "title": "deprecated/api-core-gpio"
+      },
+      "deprecated/api-core-i2c": {
+        "title": "deprecated/api-core-i2c"
+      },
+      "deprecated/api-core-pwm": {
+        "title": "deprecated/api-core-pwm"
+      },
+      "deprecated/api-core-spi": {
+        "title": "deprecated/api-core-spi"
+      },
+      "deprecated/api-core-uart": {
+        "title": "deprecated/api-core-uart"
+      },
+      "deprecated/api-simp-ACS712": {
+        "title": "deprecated/api-simp-ACS712"
+      },
+      "deprecated/api-simp-BH1750": {
+        "title": "deprecated/api-simp-BH1750"
+      },
+      "deprecated/api-simp-bme280": {
+        "title": "deprecated/api-simp-bme280"
+      },
+      "deprecated/api-simp-bmp280": {
+        "title": "deprecated/api-simp-bmp280"
+      },
+      "deprecated/api-simp-displays": {
+        "title": "Displays",
+        "sidebar_label": "Displays"
+      },
+      "deprecated/api-simp-HCSR04": {
+        "title": "deprecated/api-simp-HCSR04"
+      },
+      "deprecated/api-simp-inp-dev": {
+        "title": "Input Devices",
+        "sidebar_label": "Input Devices"
+      },
+      "deprecated/api-simp-PCF8591": {
+        "title": "deprecated/api-simp-PCF8591"
+      },
+      "deprecated/api-simp-sensors": {
+        "title": "Sensors",
+        "sidebar_label": "Sensors"
+      },
+      "deprecated/api-simple": {
+        "title": "Shunya Interfaces API",
+        "sidebar_label": "API"
+      },
+      "deprecated/adv-mode": {
         "title": "Shunya Interfaces - Advance Mode",
         "sidebar_label": "Advance Mode"
       },
-      "digitalread": {
-        "title": "Read data from the GPIO sensor",
-        "sidebar_label": "digitalRead"
-      },
-      "blink": {
-        "title": "Blink - Hello World for electronics",
-        "sidebar_label": "Blink"
-      },
-      "installation": {
-        "title": "Installation",
-        "sidebar_label": "Installation"
-      },
-      "simple-mode": {
+      "deprecated/simple-mode": {
         "title": "Shunya Interfaces - Simple Mode",
         "sidebar_label": "Simple Mode"
       },
-      "error-handling": {
+      "guides/digitalread": {
+        "title": "Read data from the GPIO sensor",
+        "sidebar_label": "digitalRead"
+      },
+      "guides/blink": {
+        "title": "Blink - Hello World for electronics",
+        "sidebar_label": "Blink"
+      },
+      "guides/installation": {
+        "title": "Installation",
+        "sidebar_label": "Installation"
+      },
+      "guides/error-handling": {
         "title": "Error Handling",
         "sidebar_label": "Error Handling"
       },
-      "home": {
+      "guides/home": {
         "title": "HomePage",
         "sidebar_label": "Shunya Interfaces"
+      },
+      "quick-start/01-intro": {
+        "title": "Introduction",
+        "sidebar_label": "Introduction"
+      },
+      "quick-start/02-overview": {
+        "title": "Overview",
+        "sidebar_label": "Overview"
+      },
+      "quick-start/03-define": {
+        "title": "Define your Product",
+        "sidebar_label": "Define"
+      },
+      "quick-start/04-design": {
+        "title": "Design your Product",
+        "sidebar_label": "Design"
+      },
+      "quick-start/05-burn-os": {
+        "title": "Burn OS",
+        "sidebar_label": "Burn OS"
+      },
+      "quick-start/06-connect": {
+        "title": "Connect Peripherals",
+        "sidebar_label": "Connect Peripherals"
+      },
+      "quick-start/categories/01-temp": {
+        "title": "Temperature",
+        "sidebar_label": "Temperature"
+      },
+      "quick-start/categories/02-pressure": {
+        "title": "Pressure",
+        "sidebar_label": "Pressure"
+      },
+      "quick-start/categories/03-humidity": {
+        "title": "Humidity",
+        "sidebar_label": "Humidity"
+      },
+      "quick-start/categories/04-altitude": {
+        "title": "Altitude",
+        "sidebar_label": "Altitude"
+      },
+      "quick-start/categories/05-distance": {
+        "title": "Distance",
+        "sidebar_label": "Distance"
+      },
+      "quick-start/categories/06-light": {
+        "title": "Light",
+        "sidebar_label": "Light"
+      },
+      "quick-start/categories/07-liquid_flow": {
+        "title": "Liquid Flow",
+        "sidebar_label": "Liquid Flow"
+      },
+      "quick-start/categories/08-analog_voltage": {
+        "title": "Analog Voltage",
+        "sidebar_label": "Analog Voltage"
+      },
+      "quick-start/categories/09-current": {
+        "title": "Current",
+        "sidebar_label": "Current"
+      },
+      "quick-start/categories/501-led": {
+        "title": "LED",
+        "sidebar_label": "LED"
+      },
+      "quick-start/categories/502-relay": {
+        "title": "Relay",
+        "sidebar_label": "Relay"
+      },
+      "quick-start/demo": {
+        "title": "Connected Sensors for Farms",
+        "sidebar_label": "Connected Sensors for Farms"
+      },
+      "quick-start/demo-installation": {
+        "title": "Shunya OS Installation",
+        "sidebar_label": "Shunya OS Installation"
+      },
+      "reference/api-adv-ACS712": {
+        "title": "reference/api-adv-ACS712"
+      },
+      "reference/api-adv-BH1750": {
+        "title": "reference/api-adv-BH1750"
+      },
+      "reference/api-adv-bme280": {
+        "title": "reference/api-adv-bme280",
+        "sidebar_label": "BME280 Advance API"
+      },
+      "reference/api-adv-HCSR04": {
+        "title": "reference/api-adv-HCSR04"
+      },
+      "reference/api-adv-PCF8591": {
+        "title": "reference/api-adv-PCF8591"
+      },
+      "reference/api-adv-sensors": {
+        "title": "Sensors",
+        "sidebar_label": "Sensors"
+      },
+      "reference/api-adv-YFS201": {
+        "title": "reference/api-adv-YFS201"
+      },
+      "reference/api-advance": {
+        "title": "Shunya Interfaces API",
+        "sidebar_label": "API-Advanced"
+      },
+      "reference/api-core-gpio": {
+        "title": "reference/api-core-gpio"
+      },
+      "reference/api-core-i2c": {
+        "title": "reference/api-core-i2c"
+      },
+      "reference/api-core-pwm": {
+        "title": "reference/api-core-pwm"
+      },
+      "reference/api-core-spi": {
+        "title": "reference/api-core-spi"
+      },
+      "reference/api-core-uart": {
+        "title": "reference/api-core-uart"
+      },
+      "reference/api-simp-ACS712": {
+        "title": "reference/api-simp-ACS712"
+      },
+      "reference/api-simp-BH1750": {
+        "title": "reference/api-simp-BH1750"
+      },
+      "reference/api-simp-bme280": {
+        "title": "reference/api-simp-bme280"
+      },
+      "reference/api-simp-bmp280": {
+        "title": "reference/api-simp-bmp280"
+      },
+      "reference/api-simp-displays": {
+        "title": "Displays",
+        "sidebar_label": "Displays"
+      },
+      "reference/api-simp-HCSR04": {
+        "title": "reference/api-simp-HCSR04"
+      },
+      "reference/api-simp-inp-dev": {
+        "title": "Input Devices",
+        "sidebar_label": "Input Devices"
+      },
+      "reference/api-simp-PCF8591": {
+        "title": "reference/api-simp-PCF8591"
+      },
+      "reference/api-simp-sensors": {
+        "title": "Sensors",
+        "sidebar_label": "Sensors"
+      },
+      "reference/api-simple": {
+        "title": "Shunya Interfaces API",
+        "sidebar_label": "API"
       }
     },
     "links": {
       "Docs": "Docs",
-      "Advance Mode": "Advance Mode",
+      "Demo": "Demo",
       "Help": "Help"
     },
     "categories": {
+      "Quick-Start": "Quick-Start",
       "Getting Started": "Getting Started",
       "Examples": "Examples",
       "Guides": "Guides",
-      "API": "API"
+      "Demo": "Demo"
     }
   },
   "pages-strings": {

@@ -70,6 +70,13 @@ class HomeSplash extends React.Component {
 								Get Started
 							</a>
 						</div>
+				 	  <div className="index-ctas">
+							<a
+								className="button index-ctas-get-started-button"
+								href={docUrl('quick-start/demo')}>
+								Demo
+							</a>
+						</div>
           </PromoSection>
         </div>
       </SplashContainer>

@@ -23,7 +23,9 @@
     "Guides": ["guides/error-handling"]
   },
   "docs-other": {
-    "API": [
+    "Demo": [ 
+      "quick-start/demo", 
+	    "quick-start/demo-installation"
     ]
   }
 }
