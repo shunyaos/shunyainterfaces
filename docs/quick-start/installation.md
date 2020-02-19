@@ -4,11 +4,11 @@ title: Shunya OS Installation
 sidebar_label: Shunya OS Installation
 ---
 
-Shunya Interfaces comes pre-installed with all versions of Shunya OS.
+Shunya Interfaces comes pre-installed with version 0.3-Beta of Shunya OS.
 To use shunya interfaces you need Shunya OS installed.
 
 ## Pre-requisites 
-1. Shunya OS supported board ([Click here for list of all supported boards](http://shunyaos.org/beta-release/))
+1. Raspberry Pi 3/4 (any variant)
 2. SD card reader 
 3. SD card 
 4. Laptop 
@@ -31,7 +31,7 @@ $ sudo apt install balena-etcher-electron
 
 ### Step 2 : Flash Shunya OS  
 
-1. Download [Shunya OS](http://shunyaos.org/beta-release/)
+1. Download [Shunya OS](http://releases.shunyaos.org/interfaces-images/)
 1. Right click on the downloaded zip file.
 1. Click Extract here.
 1. Open Etcher.
@@ -45,8 +45,6 @@ $ sudo apt install balena-etcher-electron
 
 This will start loading the SD-card with Shunya OS.
 
->**NOTE**: For special boards which does not support SD card you will find the steps for installing Shunya OS at [docs.shunyaos.org](http://docs.shunyaos.org).
-
 ### Step 3 :  Booting Up with Shunya OS 
 1. Insert the SD card into the board 
 2. Connect Keyboard and Mouse to the board 
@@ -55,3 +53,8 @@ This will start loading the SD-card with Shunya OS.
 
 
 The board should boot up to Shunya OS.
+
+#### Login 
+Login with:
+Username : shunya
+Password : shunya 
