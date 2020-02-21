@@ -1,0 +1,5 @@
+**/build
+*.0
+*.so
+*.un~	
+**/.vscode
