@@ -1,0 +1,39 @@
+pin 1: null # 3.3V Vcc Pin 
+pin 2: null # 5V Vcc Pin
+pin 3: null # I2C SDA Pin, Connect any I2C device here
+pin 4: null # 5V Vcc Pin
+pin 5: null # SCL pin
+pin 6: null # GND Pin  
+pin 7: null 
+pin 8: null
+pin 9: null
+pin 10: null
+pin 11: null
+pin 12: null 
+pin 13: null 
+pin 14: null 
+pin 15: null 
+pin 16: null   
+pin 17: null 
+pin 18: null
+pin 19: null
+pin 20: null
+pin 21: null 
+pin 22: null 
+pin 23: null 
+pin 24: null 
+pin 25: null 
+pin 26: null  
+pin 27: null 
+pin 28: null
+pin 29: null
+pin 30: null
+pin 31: null 
+pin 32: null 
+pin 33: null 
+pin 34: null 
+pin 35: null 
+pin 36: null  
+pin 37: null 
+pin 39: null
+pin 40: null
