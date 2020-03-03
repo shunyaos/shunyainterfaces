@@ -18,7 +18,7 @@ s
 ## Step 1: Connect  
 Connect as per the image given below.
 
-<img alt="Oops!, No Image to display." src={useBaseUrl('img/blink-001.png')} />;
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/blink-001.png')} />
 
 ## Step 2: Code 
 
@@ -271,7 +271,7 @@ To compile the code, run this command in terminal
 <TabItem value="c">
 
 ```bash
-$ gcc -o blink blink.c -lshunyaInterfaces -lshunyaInterfaces_core
+$ gcc -o blink blink.c -lshunyaInterfaces_user -lshunyaInterfaces_core
 $ sudo ./blink  
 ```
 

@@ -4,19 +4,23 @@ title: Connect Peripherals
 sidebar_label: Connect Peripherals
 ---
 
-## Step 0: Install Shunya OS 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+## Step 1: Install Shunya OS 
 See this page to [Install Shunya OS](../get-started/01-installation.md)
 
-## Step 1: Connect  
+## Step 2: Connect  
 
 Connect all your sensors and actuators to the selected board.
 
 Look at their **[Board Pinout](https://docs.google.com/spreadsheets/d/1PR461zqh09Z32ytkGS-EKNDEGQN2yAKHoPj025rdatc/edit?ts=5d652506#gid=44567187)** and connect the sensors.  
 
-## Step 2:  Fill YAML 
+## Step 3:  Configure Shunya Interfaces 
 
 Tell ShunyInterfaces what sensor you have connected and where it is connected.
-
 
 YAML Template will be present in `/etc/interfaces/config.yaml`
 
@@ -28,7 +32,7 @@ Copy the YAML into your projects folder
 Fill the YAML with the sensor IDs against the pin that you have connected the 
 sensor.
 
-> Example snippet of YAML file 
+> Example YAML file snippet :  
 
 ```yaml
 pin 1: null # 3.3V Vcc Pin 
@@ -39,12 +43,19 @@ pin 5: 1.2 # connected to SCL pin of BME280 sensor
 pin 6: null # GND Pin  
 ```
 
-## Step 3: Code 
+## Step 4: Code 
 
 >Skeleton structure of Shunya Interfaces
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--C-->
+<Tabs
+  defaultValue="c"
+  values={[
+    { label: 'C/CPP', value: 'c', },
+  ]
+}>
+
+<TabItem value="c">
+
 ```c
 /*Include this header file into your program */
 #include <shunyaInterfaces.h>
@@ -56,43 +67,59 @@ int main(void) {
         return 0;
 }
 ```
-<!--JavaScript-->
+
+</TabItem>
+<TabItem value="py">
+
+```py
+import shunyaInterfaces 
+```
+
+</TabItem>
+<TabItem value="js">
+
 ```js
 var commingsoon = 1;
 ```
 
-<!--Python-->
-```py
-import shunyaInterfaces 
-```
-<!--END_DOCUSAURUS_CODE_TABS-->
+</TabItem>
+</Tabs>
 
-Coding is simple with Shunya Interfaces  
-
-For C shunya interfaces follows the standard C coding structure.
-
+Fill the shunya interfaces skeleton structure with your chosen API's.
 
 
 ## Step 4: Run your program 
 
-> Compile code and Run the program.
+Compile code and Run the program.
 
-<!--DOCUSAURUS_CODE_TABS-->
-<!--C-->
+<Tabs
+  defaultValue="c"
+  values={[
+    { label: 'C/CPP', value: 'c', },
+  ]
+}>
+
+<TabItem value="c">
+
 ```bash
-$ gcc -o blink blink.c -lshunyaInterfaces 
-$ sudo ./blink  
+$ gcc -o myapp program.c -lshunyaInterfaces_user -lshunyaInterfaces_core
+$ sudo ./myapp  
 ```
 
-<!--JavaScript-->
-```bash
-$ sudo node blink.js
-```
+</TabItem>
+<TabItem value="py">
 
-<!--Python-->
 ```bash
 $ sudo python3 blink.py
 ```
 
-<!--END_DOCUSAURUS_CODE_TABS-->
-Compile code and start your application. 
+</TabItem>
+<TabItem value="js">
+
+```bash
+$ sudo node blink.js
+```
+
+</TabItem>
+</Tabs>
+

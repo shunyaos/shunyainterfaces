@@ -15,7 +15,7 @@ In this project we will be monitoring various environmental parameters
 critical for crops and will store the data and create graphs with the 
 data getting logged.
 
-<img alt="Oops!, No Image to display." src={useBaseUrl('img/demo.gif')} />;
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/demo.gif')} />
 
 ## Ingredients for the Recipe 
 1. Raspberry Pi 3/4 (or any variant of these)
@@ -32,21 +32,21 @@ data getting logged.
 
 ## Step 1: Hardware Setup
 
-![flow-001](../assets/farm_bb.png)
-
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/farm_bb.png')} />
 
 ## Step 2: Lets code!
 
 Our device must be able to do 
+
 1. Read Temperature 
 2. Read Pressure 
 3. Read Soil Moisture 
 4. Send it to Dashboard
 5. Repeat after 10 minutes 
 
-Coding is simple with Shunya Interfaces 
-
 ### Skeleton structure of Shunya Interfaces
+
+Coding is simple with Shunya Interfaces 
 
 <Tabs
   defaultValue="c"
@@ -240,7 +240,7 @@ var commingsoon = 1;
 </Tabs>
 
 :::warning
-This recipe assumes that you already have installed Grafana and Influxdb on your
+This guide assumes that you already have installed Influxdb and Grafana on your
 server or laptop and the applications are running.
 :::
 

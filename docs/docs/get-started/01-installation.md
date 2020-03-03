@@ -63,7 +63,7 @@ $ sudo apt install balena-etcher-electron
 1. Insert SD card.
 1. Click on Flash. 
 
-<img alt="Oops!, No Image to display." src={useBaseUrl('img/install.gif')} />;
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/install.gif')} />
 
 This will start loading the SD-card with Shunya OS.
 
