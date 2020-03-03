@@ -7,16 +7,11 @@ sidebar_label: Define
 Before you try turning your ideas into prototype, we ask you to write down 
 your idea on a piece of paper. Just fill in these blanks.
 
-
-I want to ________ with AI and take/trigger ___________ action.
-
-or 
-
-I want to measure _______ parameters with IoT and send ______
-or take/trigger ______ action.
+I want to measure ___________ parameters with IoT and send ___________
+or take/trigger ___________ action.
 
 For Example : 
-I want to **recognize faces** with AI and trigger **door lock to open when face recognized**.
+I want to measure **Temperature and Humidity** with IoT and **send data to dashboard**.
 
 
 What can you do with our API's ?
