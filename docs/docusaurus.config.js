@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Shunya Interfaces',
   tagline: 'Simple & Low code Interfaces library',
-  url: 'https://shunyaos.github.io/shunyainterfaces',
-  baseUrl: '/',
+  url: 'https://shunyaos.github.io',
+  baseUrl: '/shunyainterfaces/',
   favicon: 'img/favicon.ico',
   organizationName: 'shunyaos', // Usually your GitHub org/user name.
   projectName: 'shunyainterfaces', // Usually your repo name.
