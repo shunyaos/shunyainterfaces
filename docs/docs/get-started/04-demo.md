@@ -6,6 +6,8 @@ sidebar_label: Demo - Farm Datalogger
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 ## Introduction 
 
@@ -13,7 +15,7 @@ In this project we will be monitoring various environmental parameters
 critical for crops and will store the data and create graphs with the 
 data getting logged.
 
-![flow-001](../assets/demo.gif)
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/demo.gif')} />;
 
 ## Ingredients for the Recipe 
 1. Raspberry Pi 3/4 (or any variant of these)

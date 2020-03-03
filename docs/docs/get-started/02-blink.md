@@ -6,8 +6,9 @@ sidebar_label: Blink
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-
+s
 ## Pre-requisites 
 1. Shunya OS ready and Booted up.
 2. LED 
@@ -17,7 +18,7 @@ import TabItem from '@theme/TabItem';
 ## Step 1: Connect  
 Connect as per the image given below.
 
-![blink-001](../assets/blink-001.png)
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/blink-001.png')} />;
 
 ## Step 2: Code 
 

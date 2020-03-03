@@ -6,6 +6,7 @@ sidebar_label: Installation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Shunya Interfaces comes pre-installed with version 0.3-Beta of Shunya OS.
 To use shunya interfaces you need Shunya OS installed.
@@ -62,7 +63,7 @@ $ sudo apt install balena-etcher-electron
 1. Insert SD card.
 1. Click on Flash. 
 
-![Oops! No picture to display](../assets/install.gif)
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/install.gif')} />;
 
 This will start loading the SD-card with Shunya OS.
 
@@ -76,6 +77,7 @@ This will start loading the SD-card with Shunya OS.
 The board should boot up to Shunya OS.
 
 #### Login 
-Login with:
-Username : shunya
-Password : shunya 
+Login with these credentials:
+
+- Username : shunya
+- Password : shunya 
