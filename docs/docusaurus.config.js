@@ -67,7 +67,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/shunyaos/shunyainterfaces/edit/master/docs/website/',
+            'https://github.com/shunyaos/shunyainterfaces/edit/release-2.0/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
