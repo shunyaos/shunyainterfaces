@@ -13,10 +13,9 @@ module.exports = {
       ],
     'Building IoT Solutions': [      
       "build-solutions/01-intro", 
-      "build-solutions/02-overview",
-      "build-solutions/03-define",
-      "build-solutions/04-design",
-      "build-solutions/06-connect",
+      "build-solutions/03-possibilities",
+      "build-solutions/04-define",
+      "build-solutions/05-design",
       ],
   },
 };
