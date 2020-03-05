@@ -18,4 +18,17 @@ module.exports = {
       ],
 
   },
+  overview: {
+    'Overview': [      
+      "overview/introduction", 
+      "overview/sensors",
+      "overview/plc",
+      "overview/boards",
+      "overview/connectivity",
+      "overview/cloud",
+      "overview/actuators",
+      "overview/alerts",
+      "overview/dashboards",
+      ],
+  },
 };
