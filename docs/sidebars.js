@@ -7,15 +7,15 @@
 
 module.exports = {
   docs: {
-    'Getting Started': [      
-      "get-started/installation", 
-      "get-started/demo",
-      ],
     'Building IoT Solutions': [      
-      "build-solutions/01-intro", 
-      "build-solutions/03-possibilities",
+      "build-solutions/01-intro", 	
       "build-solutions/04-define",
       "build-solutions/05-design",
       ],
+    'Demo': [      
+      "get-started/installation", 
+      "get-started/demo",
+      ],
+
   },
 };

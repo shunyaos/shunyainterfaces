@@ -54,15 +54,15 @@ var commingsoon = 1;
 ### Choose Sensors (Gather data)
 
 1. [Voltage](categories/08-analog_voltage.md) 
-1. Motion (coming soon)
-1. Temperature (coming soon)
-1. Distance (coming soon)
-1. Light (coming soon)
+1. [Distance](categories/05-distance.md)
+1. [Light Intensity](categories/06-light.md)
+1. [Current](categories/09-current.md)
+1. [Liquid Flow](categories/07-liquid_flow.md)
 1. Gas (coming soon)    
 1. Pressure (coming soon)
 1. Humidity (coming soon)
-1. Current (coming soon)
-
+1. Motion (coming soon)
+1. Temperature (coming soon)
 
 ### Choose Insight tools
 
