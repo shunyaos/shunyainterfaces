@@ -16,6 +16,21 @@
   }
 }
 
+.indexCtasGetStartedButton {
+  border: 2px solid var(--ifm-color-primary);
+  display: inline-block;
+  line-height: 1.2em;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+  border-width: 2px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 18px 36px;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -30,6 +45,18 @@
 }
 
 .featureImage {
+  height: 200px;
+  width: 200px;
+}
+
+.demos {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.demoImage {
   height: 200px;
   width: 200px;
 }

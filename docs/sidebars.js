@@ -6,17 +6,20 @@
  */
 
 module.exports = {
-  docs: {
+  intro: {
+    'Demo': [      
+      "demos/farm-demo",
+      ],
+    'Getting Started': [      
+      "get-started/first-app",
+      ],
+  },
+  build: {
     'Building IoT Solutions': [      
       "build-solutions/01-intro", 	
       "build-solutions/04-define",
       "build-solutions/05-design",
       ],
-    'Demo': [      
-      "get-started/installation", 
-      "get-started/demo",
-      ],
-
   },
   overview: {
     'Overview': [      
