@@ -20,7 +20,7 @@
 #include <shunyaInterfaces.h>
 
 /* --- Project Includes --- */
-#include "sensors.h"
+#include "peripheral.h"
 #include "parse_config.h"
 #include "parse_translational.h"
 
