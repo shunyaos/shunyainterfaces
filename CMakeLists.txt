@@ -25,6 +25,7 @@ set(SRC_FILES
 	src/yaml/parse_config.c
 	src/yaml/parse_translational.c
 	src/dashboard/influxdb.c
+	src/alerts/twilio.c	
 	)
 
 # Add Rule to create a Shared object Library
@@ -47,6 +48,7 @@ set(HDR_FILES
 	include/simple_functions.h
 	include/pcf8591.h
 	include/influxdbs.h
+	include/twilio.h
 )
 
 
