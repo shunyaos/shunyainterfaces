@@ -24,6 +24,7 @@ set(SRC_FILES
 	src/peripherals/sensor/pcf8591.c
 	src/yaml/parse_config.c
 	src/yaml/parse_translational.c
+	src/dashboard/influxdb.c
 	)
 
 # Add Rule to create a Shared object Library
@@ -45,6 +46,7 @@ set(HDR_FILES
 	include/sensor_ids.h
 	include/simple_functions.h
 	include/pcf8591.h
+	include/influxdbs.h
 )
 
 
@@ -58,7 +60,7 @@ set_target_properties(${PROJECT_NAME}_user PROPERTIES
 set_target_properties(${PROJECT_NAME}_user PROPERTIES PUBLIC_HEADER "${HDR_FILES}")
 
 # Link libraries needed for the project.
-target_link_libraries(${PROJECT_NAME}_user PUBLIC -lm -lyaml )
+target_link_libraries(${PROJECT_NAME}_user PUBLIC -lm -lyaml -lcurl )
 target_link_libraries(${PROJECT_NAME}_user PUBLIC -lshunyaInterfaces_core)
 
 # Global Install Directories
