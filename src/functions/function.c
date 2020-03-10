@@ -77,3 +77,53 @@ int8_t writeDbInflux (struct InfluxdbSettings set, const char *fmt, ...)
 
         return send_to_influxdb(set, payload);
 }
+/*
+ *#####################################################################
+ *  Twilio API
+ *  -------------
+ *#####################################################################
+ */
+
+/**
+ * @brief Send Message via Twilio API
+ * 
+ */
+int8_t sendSmsTwilio (char *account_sid,
+                           char *auth_token,
+                           char *from_number,
+                           char *to_number,
+                           char *msg, ...)
+{
+        va_list ap;
+        char payload[MAX_PAYLOAD_SIZE];
+
+        va_start(ap, msg);
+        vsnprintf(payload, sizeof(payload), msg, ap);
+        va_end(ap);
+
+        return twilio_send_message(account_sid, auth_token, from_number,
+                                to_number,payload);
+}
+
+/**
+ * @brief Send Whatsapp Message via Twilio API
+ * 
+ */
+int8_t sendWhatsappTwilio(char *account_sid,
+                                char *auth_token,
+                                char *from_number,
+                                char *to_number,
+                                char *msg, ...)
+{
+        va_list ap;
+        char payload[MAX_PAYLOAD_SIZE];
+
+        va_start(ap, msg);
+        vsnprintf(payload, sizeof(payload), msg, ap);
+        va_end(ap);
+
+        return twilio_send_message(account_sid, auth_token, from_number,
+                                to_number,payload);
+}
+
+
