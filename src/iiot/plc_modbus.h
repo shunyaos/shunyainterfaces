@@ -48,7 +48,7 @@ extern "C" {
  *
  * @return     { description_of_the_return_value }
  */
-uint8_t plc_eth_read(char ip[], uint16_t port, uint16_t addr);
+extern uint8_t plc_eth_read(char ip[], uint16_t port, uint16_t addr);
 
 /**
  * @brief      Write data to PLC address connected via Ethernet
@@ -60,30 +60,29 @@ uint8_t plc_eth_read(char ip[], uint16_t port, uint16_t addr);
  *
  * @return     { description_of_the_return_value }
  */
-int8_t plc_eth_write(char ip[], uint16_t port, uint16_t addr, uint8_t val);
+extern int8_t plc_eth_write(char ip[], uint16_t port, uint16_t addr, uint8_t val);
 
 /**
- * @brief      Read the Data from the PLC device connected via Serial
- *
- * @param      ip    IP address of the PLC device.
- * @param[in]  port  The port
- * @param[in]  addr  The register address
- *
- * @return     { description_of_the_return_value }
+ * @brief Write data to PLC address connected via Serial
+ * 
+ * @param dev Device getting connected
+ * @param baud the baud rate of the serial communication
+ * @param addr the PLC address
+ * @param val the value to be written
+ * @return int8_t 0 on Success and -1 on Failure
  */
-uint8_t plc_serial_read(char ip[], uint16_t port, uint16_t addr);
+
+extern int8_t plc_serial_write(char dev[], uint16_t baud, uint16_t addr, uint8_t val);
 
 /**
- * @brief      Write data to PLC address connected via Serial
- *
- * @param      ip    IP address of the PLC
- * @param[in]  port  The port
- * @param[in]  addr  The address
- * @param[in]  val   The value
- *
- * @return     { description_of_the_return_value }
+ * @brief Read data from PLC address connected via Serial
+ * 
+ * @param dev Device getting connected
+ * @param baud the baud rate of the serial communication
+ * @param addr the PLC address
+ * @return uint8_t the value at the address
  */
-int8_t plc_serial_write(char ip[], uint16_t port, uint16_t addr, uint8_t val);
+extern uint8_t plc_serial_read(char dev[], uint16_t baud, uint16_t addr);
 
 #ifdef __cplusplus
 }
