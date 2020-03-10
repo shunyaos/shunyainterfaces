@@ -6,16 +6,32 @@
  */
 
 module.exports = {
-  docs: {
-    'Getting Started': [      
-      "get-started/installation", 
-      "get-started/demo",
+  intro: {
+    'Demo': [      
+      "demos/farm-demo",
       ],
+    'Getting Started': [      
+      "get-started/first-app",
+      ],
+  },
+  build: {
     'Building IoT Solutions': [      
-      "build-solutions/01-intro", 
-      "build-solutions/03-possibilities",
+      "build-solutions/01-intro", 	
       "build-solutions/04-define",
       "build-solutions/05-design",
+      ],
+  },
+  overview: {
+    'Overview': [      
+      "overview/introduction", 
+      "overview/sensors",
+      "overview/plc",
+      "overview/boards",
+      "overview/connectivity",
+      "overview/cloud",
+      "overview/actuators",
+      "overview/alerts",
+      "overview/dashboards",
       ],
   },
 };

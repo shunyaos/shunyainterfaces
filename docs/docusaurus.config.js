@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Shunya Interfaces',
-  tagline: 'Simple & Low code Interfaces library',
+  tagline: 'Simple and Low Code library to build IoT applications',
   url: 'https://shunyaos.github.io',
   baseUrl: '/shunyainterfaces/',
   favicon: 'img/favicon.ico',
@@ -14,7 +14,8 @@ module.exports = {
         src: 'img/logo.png',
       },
       links: [
-        {to: 'docs/get-started/installation', label: 'Docs', position: 'left'},
+        {to: 'docs/get-started/first-app', label: 'Get Started', position: 'right'},
+        {to: 'docs/demos/farm-demo', label: 'Demo', position: 'right'},
         {
           href: 'https://github.com/shunyaos/shunyainterfaces',
           label: 'GitHub',
@@ -30,7 +31,7 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: 'docs/get-started/installation',
+              to: 'docs/get-started/first-app',
             },
             {
               label: 'Build solutions',

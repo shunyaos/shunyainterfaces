@@ -1,5 +1,5 @@
 ---
-id: demo
+id: farm-demo
 title: Farm Datalogger  
 sidebar_label: Demo - Farm Datalogger
 ---
@@ -9,44 +9,120 @@ import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-## Introduction 
+The demo can be used to Monitor critical parameters which decide the health of 
+the crops, Display the data on a Dashboard using Grafana.
 
-In this project we will be monitoring various environmental parameters
-critical for crops and will store the data and create graphs with the 
-data getting logged.
+<img alt="farm-demo-gif" src={useBaseUrl('img/demo.gif')} />
 
-<img alt="Oops!, No Image to display." src={useBaseUrl('img/demo.gif')} />
 
-## Ingredients for the Recipe 
+## What will you need? 
 1. Raspberry Pi 3/4 (or any variant of these)
-1. SD card with Shunya OS installed, [instructions](01-installation.md)
+1. mcro-SD card and micro-SD card Reader/Adapter.
 1. Temperature, Pressure sensor - BME280  
 1. Soil Moisture sensor 
-1. Analog to Digital Converter PCF8591 module
+1. Analog to Digital Converter - PCF8591 module
 1. OLED Display (128x64) (optional)
-1. Wire Cutter 
-1. Screwdriver 
-1. Micro SD card Reader
 1. Female to Female Du-point cables  
 1. Laptop or Server Installed with Influxdb and Grafana
 
-## Step 1: Hardware Setup
 
-<img alt="Oops!, No Image to display." src={useBaseUrl('img/farm_bb.png')} />
+## Steps 
+
+Make your own Farm datalogger following these steps.
+
+1. Install Shunya OS 
+1. Write Code
+1. Connect Hardware 
+1. Compile and Run
+
+
+## Step 1: Install Shunya OS
+Shunya Interfaces is built on top of Shunya OS and comes pre-installed with Shunya Interfaces. 
+Shunya OS is an linux-based OS that runs on your hardware, it light-weight and configurable.
+
+### Install Etcher 
+
+Etcher allows you to Flash Shunya OS on the micro-SD card.
+
+<Tabs
+  defaultValue="nix"
+  values={[
+    { label: 'Windows', value: 'win', },
+    { label: 'Ubuntu', value: 'nix', },
+  ]
+}>
+
+
+<TabItem value="nix">
+
+#### For Ubuntu 16.04 
+
+Installing Etcher is Simple, just run few commands in the terminal
+
+```bash
+$ sudo apt update
+$ sudo apt install balena-etcher-electron
+```
+
+</TabItem>
+<TabItem value="win">
+
+#### For Windows 10
+
+Installing Etcher is Simple, download the executable file and Run.
+
+1. Download [balenaEtcher](https://www.balena.io/etcher/) for Windows. 
+2. Run balenaEtcherSetup-xxx.exe
+
+</TabItem>
+</Tabs>
+
+### Flash Shunya OS  
+
+1. Download [Shunya OS](http://releases.shunyaos.org/interfaces-images/)
+1. Right click on the downloaded zip file.
+1. Click Extract here.
+1. Open Etcher.
+1. Click Select Image.
+1. You will find the Shunya OS `.img` file in the folder that we had extracted earlier. 
+1. Select `shunya-aaaa-image-xxxx.img` file.
+1. Insert SD card.
+1. Click on Flash. 
+
+<img alt="install-shunya-os-gif" src={useBaseUrl('img/install.gif')} />
+
+This will load the micro-SD card with Shunya OS.
+
+### Booting Up with Shunya OS 
+1. Insert the micro-SD card into the board. 
+1. Connect peripherals like Keyboard, Mouse and HDMI monitor. 
+1. Connect Power Supply. 
+
+The board should boot up with Shunya OS.
+
+#### Login to Shunya
+Login with these credentials:
+
+- Username : shunya
+- Password : shunya 
+
 
 ## Step 2: Lets code!
 
-Our device must be able to do 
+Open up your editor on Shunya OS and lets start coding.
+
+Our application must be able to  
 
 1. Read Temperature 
 2. Read Pressure 
 3. Read Soil Moisture 
 4. Send it to Dashboard
-5. Repeat after 10 minutes 
+5. Repeat 1-4 after 10 minutes 
 
-### Skeleton structure of Shunya Interfaces
+### Basic structure of Shunya Interfaces
 
-Coding is simple with Shunya Interfaces 
+Use the basic structure as a reference and Paste code into the structure as per 
+your app logic.
 
 <Tabs
   defaultValue="c"
@@ -63,8 +139,15 @@ Coding is simple with Shunya Interfaces
 
 /* Main Function */
 int main(void) {
-        /* initialize the Library*/
+        /* Initialize the Library*/
         initLib();
+
+
+/*####################################
+ *       PASTE CODE BELOW
+ *####################################*/
+
+
         return 0;
 }
 ```
@@ -162,7 +245,6 @@ var commingsoon = 1;
 
 ### API for reading Soil moisture from the sensor is  
 
-
 <Tabs
   defaultValue="c"
   values={[
@@ -195,8 +277,6 @@ var commingsoon = 1;
 
 </TabItem>
 </Tabs>
-
-
 
 ### Send the Data to Dashboard  
 
@@ -241,11 +321,12 @@ var commingsoon = 1;
 
 :::warning
 This guide assumes that you already have installed Influxdb and Grafana on your
-server or laptop and the applications are running.
+server or laptop and the applications are running. For Installing Influxdb and Grafana 
+Check these guides, [InfulxDB](https://portal.influxdata.com/downloads/) & [Grafana](https://grafana.com/grafana/download?platform=docker)
 :::
 
-Here is the full code.
-
+### Summary
+Your Code should look something like this. 
 
 <Tabs
   defaultValue="c"
@@ -332,16 +413,37 @@ var commingsoon = 1;
 </Tabs>
 
 
-## Step 3: Configure, Compile and Run
+## Step 3: Connect Hardware
 
-To configure shunya interfaces, you need to tell shunya interfaces what all sensors are connected
-Run this command,
+Now its time to put all the hardware together, use the diagram below to connect 
+hardware.
+
+<img alt="Oops!, No Image to display." src={useBaseUrl('img/farm_bb.png')} />
+
+
+## Step 4: Configure, Compile and Run
+
+### Configure 
+
+Tell Shunya Interfaces your hardware connections.
+
+You can configure by running command.
 ```
 $ sudo vi /etc/shunya/interfaces/config.yaml
 ```
+#### Sensor ID's and Connection ID's 
 
-Since we have connected 2 devices to the RPI (BME280 and PCF8591) to pin 3 & pin 5 respectively
-You need to write these to the config file
+You tell all your Hardware connections to Shunya Interfaces via Sensor ID's and 
+Connection ID's. 
+
+Each Sensor is given a special ID which the Shunya Interfaces library recognizes.
+And each Hardware pin on the Sensor is given a Connection ID.
+
+So when we write `pin 1: 1.1` Shunya Interfaces understands it as `<Sensor 1>.<Sensor pin 1>` connected to `pin 1` of Raspberry Pi.      
+
+In our case, we have connected 2 devices to the  Raspberry Pi (BME280 and PCF8591) to pin 3 (SDA) & pin 5 (SCL) respectively.
+
+Our Config file will look like.
 
 ```yaml
 
@@ -349,15 +451,32 @@ pin 3: [1.1, 6.1]
 pin 4: null
 pin 5: [1.2, 6.2]
 ```
+Make sure to save your changes to the config file.
 
-Where `1` is the sensor id of BME280 while `6` is the sensor id for PCF8591.
+### Compile and Run
 
-Save and Exit the config file. 
+Compiling code is same as compiling C program. Just link the libraries.
 
-To compile the code, run this command in terminal 
+:::tip
+While running the code use `sudo` to give appropriate permissions to your app.
+:::
 
 ```bash
 $ gcc -o iotfarm iotfarm.c -lshunyaInterfaces_user -lshunyaInterfaces_core -lcurl
 $ sudo ./iotfarm  
 ```
 
+Now your IoT device is ready and publishing data to the server.
+
+## Step 5: Create Dashboards
+
+Now that the IoT app is up and running, configure Grafana to create Beautiful 
+Dashboards for you.
+
+Grafana provides amazing guides for users to configure Grafana, take a look at them.
+- [Guide](https://grafana.com/docs/grafana/latest/features/datasources/influxdb/) to help you connect Influxdb to grafana.
+- [Guide](https://grafana.com/docs/grafana/latest/guides/getting_started/#create-a-dashboard) to help you create Dashboards.
+
+# Want to Build your own Application?
+
+Click on the Next button, below.
