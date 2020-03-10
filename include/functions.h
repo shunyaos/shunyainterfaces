@@ -129,6 +129,58 @@ extern int8_t sendWhatsappTwilio(char *account_sid,
                                         char *to_number,
                                         char *msg, ...);
 
+/*
+ *#####################################################################
+ *  Modbus API's
+ *  -------------
+ *#####################################################################
+ */
+
+/**
+ * @brief      Read the Data from the PLC device connected via Ethernet
+ *
+ * @param      ip    IP address of the PLC device.
+ * @param[in]  port  The port
+ * @param[in]  addr  The register address
+ *
+ * @return     uint8_t the value at the PLC address 
+ */
+
+extern uint8_t modbusTCPRead (char ip[], uint16_t port, uint16_t addr);
+/**
+ * @brief      Write data to PLC address connected via Ethernet
+ *
+ * @param      ip    IP address of the PLC
+ * @param[in]  port  The port
+ * @param[in]  addr  The address
+ * @param[in]  val   The value
+ *
+ * @return    int8_t 0 on Success and -1 on Failure
+ */
+
+extern int8_t modbusTCPWrite (char ip[], uint16_t port, uint16_t addr, uint8_t val);
+
+/**
+ * @brief Read data from PLC address connected via Serial
+ * 
+ * @param dev Device getting connected
+ * @param baud the baud rate of the serial communication
+ * @param addr the PLC address
+ * @return uint8_t the value at the address
+ */
+extern uint8_t modbusRTURead (char dev[], uint16_t baud, uint16_t addr);
+
+/**
+ * @brief Write data to PLC address connected via Serial
+ * 
+ * @param dev Device getting connected
+ * @param baud the baud rate of the serial communication
+ * @param addr the PLC address
+ * @param val the value to be written
+ * @return int8_t 0 on Success and -1 on Failure
+ */
+
+extern int8_t modbusRTUWrite (char dev[], uint16_t baud, uint16_t addr, uint8_t val);
 
 #ifdef __cplusplus
 }
