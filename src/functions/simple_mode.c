@@ -20,6 +20,7 @@
 
 /* --- Project Includes --- */
 #include "simple_mode.h"
+#include "generic.h"
 
 /*
  *#####################################################################
@@ -192,4 +193,49 @@ uint8_t lightStatus()
 uint8_t tiltStatus() 
 {
         return tilt_status();
+}
+
+/*
+ *#####################################################################
+ *  Generic Digital Actuator
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic GPIO pin.
+ *
+ */
+void setPin(uint8_t phyPin, uint8_t mode)
+{
+        generic_set(phyPin, mode);
+}
+
+/*
+ *#####################################################################
+ *  LED
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic GPIO pin.
+ *
+ */
+void setLed(uint8_t phyPin, uint8_t mode)
+{
+        generic_set(phyPin, mode);
+}
+
+/*
+ *#####################################################################
+ *  RELAY
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic GPIO pin.
+ *
+ */
+void setRelay(uint8_t phyPin, uint8_t mode)
+{
+        generic_set(phyPin, mode);
 }

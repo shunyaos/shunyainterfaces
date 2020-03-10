@@ -18,6 +18,7 @@ set(SRC_FILES
 	src/functions/adv_mode.c
 	src/functions/function.c
 	src/functions/simple_mode.c
+	src/peripherals/actuators/generic.c
 	src/peripherals/common/adv_mode.c
 	src/peripherals/common/peripheral.c
 	src/peripherals/common/simple_mode.c
@@ -47,8 +48,9 @@ target_include_directories(${PROJECT_NAME}_user PRIVATE
 	src/functions
 	src/peripherals/common
 	src/peripherals/sensor
-	include
+	src/peripherals/actuators
 	src/yaml
+	include
 	)
 
 # List all Header files
