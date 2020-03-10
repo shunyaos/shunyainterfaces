@@ -72,6 +72,19 @@ extern void setLed(uint8_t phyPin, uint8_t mode);
  *
  */
 extern void setRelay(uint8_t phyPin, uint8_t mode);
+
+
+/**
+ * @brief Send Data to Influx DB
+ * 
+ * @param set the InfulxDB settings 
+ * @param fmt the payload to be sent to Influxdb
+ * @param ... 
+ * @return int8_t 0 on Success and -1 on Failure
+ */
+extern int8_t writeDbInflux (struct InfluxdbSettings set, const char *fmt, ...);
+
+
 #ifdef __cplusplus
 }
 #endif /* End of CPP guard */
