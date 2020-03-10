@@ -1,0 +1,61 @@
+---
+pin 3: 
+  i2c-details: 1
+  spi-details: null
+  uart-details: null
+  pwm-details: null
+pin 5: 
+  i2c-details: 1
+  spi-details: null
+  uart-details: null
+  pwm-details: null
+pin 9: 
+  i2c-details: null
+  spi-details: 0
+  uart-details: ttyS0
+  pwm-details: null
+pin 11: 
+  i2c-details: null
+  spi-details: 0
+  uart-details: ttyS0
+  pwm-details: null
+pin 12: 
+  i2c-details: null
+  spi-details: null
+  uart-details: null
+  pwm-details: 0.3
+pin 13: 
+  i2c-details: null
+  spi-details: 0
+  uart-details: null
+  pwm-details: null
+pin 15: 
+  i2c-details: null
+  spi-details: 0
+  uart-details: null
+  pwm-details: null
+pin 19: 
+  i2c-details: null
+  spi-details: 1
+  uart-details: ttyS2
+  pwm-details: null
+pin 21: 
+  i2c-details: null
+  spi-details: 1
+  uart-details: ttyS2
+  pwm-details: null
+pin 23: 
+  i2c-details: null
+  spi-details: 1
+  uart-details: null
+  pwm-details: null
+pin 22: 
+  i2c-details: null
+  spi-details: null
+  uart-details: null
+  pwm-details: 0.1
+pin 26: 
+  i2c-details: null
+  spi-details: null
+  uart-details: null
+  pwm-details: 0.2
