@@ -23,7 +23,7 @@
 
 /* --- Project Includes --- */
 #include <shunyaInterfaces.h>
-#include "hc-sr04.h"
+#include "HC-SR04.h"
 
 static int isultraSonicSetuped = FALSE;
 
