@@ -26,15 +26,14 @@ extern "C" {
  * @param auth_token the Authorization Token from the Twilio console.
  * @param from_number the sending (Number in your Twilio account).
  * @param to_number the Receiving mobile number.
- * @param msg the msg to be sent.
- * @param ... 
- * @return int8_t 
+ * @param payload the msg to be sent. 
+ * @return int8_t 0 on Success and -1 on Failure.
  */
 extern int8_t twilio_send_message(char *account_sid,
                                   char *auth_token,
                                   char *from_number,
                                   char *to_number,
-                                  char *msg, ...);
+                                  char *payload);
 /**
  * @brief Send Whatsapp Message via Twilio API
  * 
@@ -42,15 +41,14 @@ extern int8_t twilio_send_message(char *account_sid,
  * @param auth_token the Authorization Token from the Twilio console.
  * @param from_number the sending (Number in your Twilio account).
  * @param to_number the Receiving mobile number.
- * @param msg the msg to be sent.
- * @param ... 
- * @return int8_t 
+ * @param payload the msg to be sent.
+ * @return int8_t 0 on Success and -1 on Failure.
  */
 extern int8_t twilio_send_whatsapp_message(char *account_sid,
                                         char *auth_token,
                                         char *from_number,
                                         char *to_number,
-                                        char *msg, ...);
+                                        char *payload);
 
 #ifdef __cplusplus
 }

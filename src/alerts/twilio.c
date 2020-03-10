@@ -44,14 +44,8 @@ int8_t twilio_send_message(char *account_sid,
                            char *auth_token,
                            char *from_number,
                            char *to_number,
-                           char *msg, ...)
+                           char *payload)
 {
-        va_list ap;
-        char payload[MAX_PAYLOAD_SIZE];
-
-        va_start(ap, msg);
-        vsnprintf(payload, sizeof(payload), msg, ap);
-        va_end(ap);
 
         // See: https://www.twilio.com/docs/api/rest/sending-messages for
         // information on Twilio body size limits.
@@ -125,15 +119,8 @@ int8_t twilio_send_whatsapp_message(char *account_sid,
                                 char *auth_token,
                                 char *from_number,
                                 char *to_number,
-                                char *msg, ...)
+                                char *payload)
 {
-        va_list ap;
-        char payload[MAX_PAYLOAD_SIZE];
-
-        va_start(ap, msg);
-        vsnprintf(payload, sizeof(payload), msg, ap);
-        va_end(ap);
-
         // See: https://www.twilio.com/docs/api/rest/sending-messages for
         // information on Twilio body size limits.
         if (strlen(payload) > 1600) {
