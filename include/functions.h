@@ -39,6 +39,39 @@ extern "C" {
  */
 extern void initLib (void);
 
+/*
+ *#####################################################################
+ *  Generic Digital Actuator
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic GPIO pin.
+ *
+ */
+extern void setPin(uint8_t phyPin, uint8_t mode);
+/*
+ *#####################################################################
+ *  LED
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic LED pin.
+ *
+ */
+extern void setLed(uint8_t phyPin, uint8_t mode);
+/*
+ *#####################################################################
+ *  RELAY
+ *  ------------------------
+ *#####################################################################
+ */
+/**
+ * @brief Set any generic Relay pin.
+ *
+ */
+extern void setRelay(uint8_t phyPin, uint8_t mode);
 #ifdef __cplusplus
 }
 #endif /* End of CPP guard */

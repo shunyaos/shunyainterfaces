@@ -18,10 +18,24 @@ set(SRC_FILES
 	src/functions/adv_mode.c
 	src/functions/function.c
 	src/functions/simple_mode.c
+	src/peripherals/actuators/generic.c
 	src/peripherals/common/adv_mode.c
 	src/peripherals/common/peripheral.c
 	src/peripherals/common/simple_mode.c
 	src/peripherals/sensor/pcf8591.c
+	src/peripherals/sensor/ball-switch.c
+	src/peripherals/sensor/BH1750.c
+	src/peripherals/sensor/HC-SR04.c
+	src/peripherals/sensor/IR-proximity.c
+	src/peripherals/sensor/KY-017.c
+	src/peripherals/sensor/KY-025.c
+	src/peripherals/sensor/light-blocking.c
+	src/peripherals/sensor/LM393.c
+	src/peripherals/sensor/pcf8591.c
+	src/peripherals/sensor/PIR.c
+	src/peripherals/sensor/SEN-11574.c
+	src/peripherals/sensor/touch.c
+	src/peripherals/sensor/YF-S201.c
 	src/yaml/parse_config.c
 	src/yaml/parse_translational.c
 	)
@@ -32,10 +46,11 @@ add_library(${PROJECT_NAME}_user SHARED ${SRC_FILES})
 # Include directories while compiling the project
 target_include_directories(${PROJECT_NAME}_user PRIVATE
 	src/functions
-	src/sensor
 	src/peripherals/common
-	include
+	src/peripherals/sensor
+	src/peripherals/actuators
 	src/yaml
+	include
 	)
 
 # List all Header files
