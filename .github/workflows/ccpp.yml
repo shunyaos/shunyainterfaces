@@ -1,0 +1,25 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: 
+    - master
+    - develop
+  pull_request:
+    branches:
+    - master
+    - develop
+
+jobs:
+  build:
+
+    runs-on: ubuntu-16.04
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup dir
+      run: mkdir build && cd build  
+    - name: Run Cmake
+      run: cmake ../
+    - name: Build
+      run: make -j4
