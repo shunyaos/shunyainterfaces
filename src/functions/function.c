@@ -13,8 +13,10 @@
 
 /* --- Standard Includes --- */
 #include <stdint.h>
+#include <stdarg.h>
 /* --- Project Includes --- */
 #include "peripheral.h"
+#include "influxdb.h"
 /*
  *#####################################################################
  *  Process block
@@ -53,4 +55,25 @@ void initLib (void)
          */
         /** For now initialize the layer */
         init_func_layer();
+}
+
+
+/**
+ * @brief Send Data to Influx DB
+ * 
+ * @param set the InfulxDB settings 
+ * @param fmt the payload to be sent to Influxdb
+ * @param ... 
+ * @return int8_t 0 on Success and -1 on Failure
+ */
+int8_t writeDbInflux (struct InfluxdbSettings set, const char *fmt, ...) 
+{
+
+        va_list ap;
+        char payload [MAX_PAYLOAD_SIZE] ;
+        va_start(ap, fmt);
+        vsnprintf(payload, sizeof(payload), fmt, ap);
+        va_end(ap);
+
+        return send_to_influxdb(set, payload);
 }

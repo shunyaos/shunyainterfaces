@@ -31,15 +31,9 @@
  * @brief Send Data to Influx DB
  * 
  */
-int8_t send_to_influxdb(struct InfluxdbSettings set, const char *fmt, ...)
+int8_t send_to_influxdb(struct InfluxdbSettings set, const char *payload)
 {
         int8_t rc = -1;
-        va_list ap;
-        char payload [MAX_PAYLOAD_SIZE] ;
-
-        va_start(ap, fmt);
-        vsnprintf(payload, sizeof(payload), fmt, ap);
-        va_end(ap);
 
 	CURL *curl;
 	CURLcode res;

@@ -32,11 +32,11 @@ struct InfluxdbSettings {
  * @brief Send Data to Influx DB
  * 
  * @param set the InfulxDB settings 
- * @param fmt the payload to be sent to Influxdb
+ * @param payload the payload to be sent to Influxdb
  * @param ... 
  * @return int8_t 0 on Success and -1 on Failure
  */
-int8_t send_to_influxdb(struct InfluxdbSettings set, const char *fmt, ...);
+int8_t send_to_influxdb(struct InfluxdbSettings set, const char *payload);
 
 #ifdef __cplusplus
 }
