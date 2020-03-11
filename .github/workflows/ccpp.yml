@@ -12,7 +12,6 @@ on:
 
 jobs:
   build:
-  container:
     runs-on: ubuntu-latest
     container: shunyaos/shunya:armv7
     steps:
